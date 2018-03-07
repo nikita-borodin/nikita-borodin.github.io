@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+header {
+    background-color: #0182c4;
+    height: 100 px;
+    width: 100%;
+    position: fixed;
+    margin-top: -10px;
+    /* покрывает остальные элементы, как этого избежать без дополнительных отступов?*/
+    }
+.title {
+    font-family: Roboto;
+    font-style: italic;
+    color: #0182c4
+}
+nav {background-color:#0183c4;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: darkgray;
+    padding: 0 10px;
+    }
+main {background-color: white;
+    width: 100%;
+    margin: 0 10px;
+    }
+aside {background-color: white;
+    width: 200px;
+    order: 2
+    }
+footer {background-color: lightcoral;
+    border-style: ridge;
+    height: 150px;
+    margin: 20px;
+    order: 3
+    }
+.container {
+    display: flex;
+    padding-top: 100px
+}
+
+.logo {
+    height: 100px;    
+}
+.mainpic figcaption {
+    text-align: center;
+}
+.mainpic img {
+    height:200px;
+    margin: 10px auto;
+    display: block;
+    
+    /* как отцентровать картинку и сделать к ней отцентрованную подпись? */
+}
+.nav{
+    font-family: "Verdana";
+    color: rgb(50, 50, 50);
+    font-size: 16px;
+    /* как уменьшить отступ от предыдущего заголовка? */
+}
+p{
+    font-family: "Verdana";
+    color: rgb(50, 50, 50);
+    font-size: 12px;
+}
+a{
+    font-family: "Verdana";
+    color: rgb(50, 50, 50); 
+}
+ul{
+    font-family: "Verdana";
+    color: rgb(50, 50, 50);
+    font-size: 12px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+   }
+th {
+    border: 1px solid #333;
+    padding: 4px;
+    text-align: center;
+   }
+td {
+    border: 1px solid #333;
+    padding: 4px;
+    text-align: center;
+   }
+
+@media only screen and (max-width: 500px) {
+nav {
+    display: flex;
+    border-right-width: 0px;
+    width: 100%}
+
+main {
+    display: flex;
+    width:100%
+}
+
+aside {
+    display: flex;
+    width:100%
+}
+container {
+    display: block;
+}
+
+}
