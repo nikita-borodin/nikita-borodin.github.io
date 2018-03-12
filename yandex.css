@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-/* 1. Откуда слева берется отступ у всего сайта?
-    2. Можно просто все заскриншотить и нарезать, но так же не делается? */
 body{
     background-color: #dedede;
     margin:0px;
@@ -124,7 +122,7 @@ body{
 
 .ninenine{
     display: flex;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .nineninedivvid{
@@ -138,14 +136,13 @@ body{
     position: relative;
     display: block;
     width:50%;
-    /* не работает фон, потому что я не задал размеры дива, но как я могу их задать, если у меня они постоянно меняются? */
+    background-color: #ffffff;
 }
 
 .nineninevid{
     display: inline-block;
     overflow: hidden;
     width: 100%;
-    /* Почему не масштабируется под размер дива? */
 }
 
 .ninenineh {
@@ -159,6 +156,7 @@ body{
 }
 
 .nineninep{
+    max-width: 500px;
     position: relative;
     margin-left:30px;
     margin-top: -20px;
@@ -167,8 +165,43 @@ body{
     font-size: 15.5px;
 }
 
-.ninenineplink{
-    
+.ninenineplink a{
+    position: relative;
+    margin-left:30px;
+    text-align: left;
+    font-family: "Open Sans";
+    font-size: 15.5px;
+    color: blue;
+    text-decoration: none    
+}
+
+.ninenineplink a:hover{
+    color: red;
+    transition: color .15s ease-out;
+}
+
+.paymain{
+    display: flex;
+    width: 100%;
+    background-color: #ecebea;
+}
+
+.paytextdiv{
+    position: relative;
+    display: block;
+    width: 50%;
+}
+
+.payviddiv{
+    position: relative;
+    display: block;
+    width:50%;
+}
+
+.payvid{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
 }
 
 footer{
@@ -199,23 +232,25 @@ footer{
 
 .footerdiv {
     position: relative;
+    display: flex;
     margin: 0 20px;
     margin-top: 40px;
     border-top: 1px solid darkgrey;
 }
 
 .footerdiv p {
-    /* Пробовал с абсолютным позиционированием развести надписи по разным углам, но ничего не вышло, почему-то ломается контейнер */
-    display: inline-block;
+    display: block;
     font-family: "Open Sans";
     color: #999999;
     font-size: 12px;
 }
 
-.footerp1 {
-    left: 0px;
+.leftfoot {
+    width: 50%;
+    text-align: left;
 }
 
-.footerp2 {
-    right: 0px;
+.rightfoot {
+    width: 50%;
+    text-align: right;
 }
