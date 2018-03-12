@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* 1. Откуда слева берется отступ у всего сайта?
+    2. Можно просто все заскриншотить и нарезать, но так же не делается? */
+body{
+    background-color: #dedede;
+    margin:0px;
+}
+
+.screen{
+    min-width: 900px;
+    max-width: 1600px;
+}
+
+.headermain{
+    height: 59px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.maintable{
+    width: 90%;
+}
+
+.buttonlogin{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 10%;
+}
+
+.buttonlogin1{
+    position: absolute;
+    top: 20%;
+    right: 10px;
+}
+
+.headerlogo{
+    height:59px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.headertext{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.headertext p{
+    display: inline-block;
+    transform: rotate(90deg);
+    /* Ок, я сделал галку, но как ее опустить чуть ниже? */
+}
+
+.nearbgdiv{
+    position: relative;
+    width:100%;
+}
+
+.nearbg{
+    overflow: hidden;
+    width:100%;
+    /* не могу сместить картинку выше, чтобы как на сайте было. Если делаю через марджин - она закрывает меню, а паддинг не работает */
+}
+
+.nearh{
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 10px;
+    font-size: 84px;
+    font-weight: 1000;
+    line-height: 82px;
+    font-family: "Open Sans";
+    z-index: 100;
+}
+
+.nearp{
+    position: absolute;
+    margin-left:15px;
+    margin-top: 110px;
+    width: 505px;
+    font-family: "Open Sans";
+    font-size: 15.5px;
+    z-index:101;
+}
+
+.math{
+    width: 100%;
+    position: relative;
+}
+
+.mathh {    
+    font-weight: 550;
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+    font-family: sans-serif;
+    position: relative;
+    display: block;
+}
+
+.mathpic{
+    display: flex;
+}
+
+.math1{
+    display: inline-block;
+}
+
+.math img {
+    width: 100%;
+    align-self: center;
+}
+
+.math1 figcaption {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 15.5px;
+    width: 80%;
+}
+
+.ninenine{
+    display: flex;
+    margin-top: 50px;
+}
+
+.nineninedivvid{
+    position: relative;
+    display: block;
+    width:50%;
+    background-color: #ecebea;
+}
+
+.nineninedivtext{
+    position: relative;
+    display: block;
+    width:50%;
+    /* не работает фон, потому что я не задал размеры дива, но как я могу их задать, если у меня они постоянно меняются? */
+}
+
+.nineninevid{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    /* Почему не масштабируется под размер дива? */
+}
+
+.ninenineh {
+    font-weight: 550;
+    text-align: left;
+    font-size: 42px;
+    line-height: 50px;
+    font-family: sans-serif;
+    position: relative;
+    margin-left: 30px;
+}
+
+.nineninep{
+    position: relative;
+    margin-left:30px;
+    margin-top: -20px;
+    text-align: left;
+    font-family: "Open Sans";
+    font-size: 15.5px;
+}
+
+.ninenineolink{
+    
+}
+
+footer{
+    width:100%;
+    background: #f3f1ed;
+    position: relative;
+}
+
+.footerh{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    color: #999999;
+}
+
+.snicons{
+    margin-left: 15px;
+    width: 150px;
+    display: flex;
+}
+
+.snicons img{
+    margin: 0 5px;
+}
+
+.footerdiv {
+    position: relative;
+    margin: 0 20px;
+    margin-top: 40px;
+    border-top: 1px solid darkgrey;
+}
+
+.footerdiv p {
+    /* Пробовал с абсолютным позиционированием развести надписи по разным углам, но ничего не вышло, почему-то ломается контейнер */
+    display: inline-block;
+    font-family: "Open Sans";
+    color: #999999;
+    font-size: 12px;
+}
+
+.footerp1 {
+    left: 0px;
+}
+
+.footerp2 {
+    right: 0px;
+}
