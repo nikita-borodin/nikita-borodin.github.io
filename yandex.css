@@ -48,20 +48,25 @@ body{
 }
 
 .headertext p{
+    position: relative;
     display: inline-block;
     transform: rotate(90deg);
-    /* Ок, я сделал галку, но как ее опустить чуть ниже? */
+    top: 2px
 }
 
 .nearbgdiv{
+    background-color: #e7e6e8;
+    overflow: hidden;
     position: relative;
     width:100%;
+    height: 700px;
 }
 
 .nearbg{
-    overflow: hidden;
+    position: absolute;
     width:100%;
-    /* не могу сместить картинку выше, чтобы как на сайте было. Если делаю через марджин - она закрывает меню, а паддинг не работает */
+    top: -250px;
+    left: -200px;
 }
 
 .nearh{
@@ -127,14 +132,12 @@ body{
 
 .nineninedivvid{
     position: relative;
-    display: block;
     width:50%;
-    background-color: #ecebea;
+    background-color: #eae9e8;
 }
 
 .nineninedivtext{
     position: relative;
-    display: block;
     width:50%;
     background-color: #ffffff;
 }
@@ -183,7 +186,7 @@ body{
 .paymain{
     display: flex;
     width: 100%;
-    background-color: #ecebea;
+    background-color: #eae9ea;
 }
 
 .paytextdiv{
@@ -212,7 +215,7 @@ footer{
 
 .footerh{
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: -20px;
     padding-top: 40px;
     font-size: 20px;
     font-weight: 600;
