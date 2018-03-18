@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Loginpage</title>
+    <script>
+        var login = prompt ('Введите логин');
+        var password = prompt ('Введите пароль');
+
+        if (login == 'admin' && password == 'qwerty1234') {
+            alert ('Привет, админ!')
+        }
+
+        else if (!login || !password) {
+            alert ('Ой! Что-то пошло не так, перезагрузи страницу.')
+        }
+
+        else {
+            alert ('Введен неправильный логин или пароль. Перезагрузи страницу чтобы попробовать снова.')
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1>Loginpage</h1>
+</body>
+</html>
