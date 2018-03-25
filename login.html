@@ -5,21 +5,28 @@
     <title>Loginpage</title>
     <script>
         var login = prompt ('Введите логин');
-        var password = prompt ('Введите пароль');
-
-        if (login == 'admin' && password == 'qwerty1234') {
-            alert ('Привет, админ!')
+        
+        if (!login) {
+            alert ('Упс, что-то пошло не так!')
         }
 
-        else if (!login || !password) {
-            alert ('Ой! Что-то пошло не так, перезагрузи страницу.')
+        else if (login != 'admin') {
+            alert ('Ви таки не админ!')
         }
 
         else {
-            alert ('Введен неправильный логин или пароль. Перезагрузи страницу чтобы попробовать снова.')
+            var password = prompt ('Введите пароль');
+            if (!password) {
+                alert ('Упс, что-то пошло не так!')
+            }
+            else if (password != 'qwerty1234') {
+                alert ('Забыли пароль, админ?')
+            }
+            else {
+                alert ('Привет, админ!')
+            }
         }
-
-
+        
     </script>
 </head>
 <body>
